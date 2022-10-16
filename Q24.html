@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    //Tests for equality and inequality with strings
+    let car = 'subaru';
+    console.log("Is car == 'subaru'? I predict True.");
+    console.log(car == 'subaru');
+
+    console.log("Is car != 'subaru'? I predict True.");
+    console.log(car != 'subaru');
+
+    //  Tests using the lower case function
+    console.log("Is car is lowercase? I predict True.");
+    console.log(car == car.toLowerCase());
+
+    console.log("Is car is uppercase? I predict True.");
+    console.log(car == car.toUpperCase());
+
+    //Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+    let num = 5;
+    console.log("5==0: " + (num == 0));
+    console.log("5!=0: " + (num != 0));
+    console.log("5>0: " + (num > 0));
+    console.log("5<0: " + (num < 0));
+    console.log("5<=0: " + (num <= 0));
+    console.log("5>=0: " + (num >= 0));
+
+    // Tests using "and" and "or" operators
+    console.log("5==5 && 5==5: " + (num == 5 && num == 5));
+    console.log("5==5 || 5==5: " + (num == 5 || num == 0));
+
+    // Test whether an item is in a array
+    let itemarray = [4, 5, 6, 7];
+
+    console.log("Array contains the item number 5: " + (itemarray.includes(5)));
+    console.log("Array contains the item number 10: " + (itemarray.includes(10)));
+  </script>
+
+</body>
+
+</html>

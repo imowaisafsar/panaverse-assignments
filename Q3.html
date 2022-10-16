@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let person_name = "Owais Afsar";
+        let lc_name = person_name.toLowerCase();
+        let uc_name = person_name.toUpperCase();
+        function titleCase(string) {
+            var sentence = string.toLowerCase().split(" ");
+            for (var i = 0; i < sentence.length; i++) {
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+            return sentence.join(" ");
+        }
+        let tc_name = titleCase(person_name);
+        console.log('person_name:' + person_name);
+        console.log('lower_case:' + lc_name);
+        console.log('upper_case:' + uc_name);
+        console.log('title_case:' + tc_name);
+        alert('person_name: ' + person_name + ', lowera_case: ' + lc_name + ', upper_case: ' + uc_name + ', title_case: ' + tc_name);
+    </script>
+
+</body>
+
+</html>

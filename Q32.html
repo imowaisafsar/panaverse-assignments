@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let current_users = ["admin", "maaz", "huzaifa", "owais", "hammad"];
+
+        let new_users = ["haris", "maaz", "huzaifa", "taha", "mansoor"];
+
+        for (i = 0; i < new_users.length; i++) {
+            if (
+                current_users.includes(new_users[i])
+            ) {
+                console.log("this user name is already taken " + new_users[i] + " person will need to enter a new username");
+            }
+            else {
+                console.log(new_users[i] + " the username is available.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

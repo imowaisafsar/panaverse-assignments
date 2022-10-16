@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    var temparray = new Array();
+    const countries = [
+      "saudia",
+      "dubai",
+      "turkey",
+      "iran",
+      "london",
+    ];
+    console.log("orignal array*************")
+    for (i = 0; i < countries.length; i++) {
+      console.log(countries[i]);
+    }
+
+    temparray = countries.slice();
+    console.log("sorted alphabetical order array*************")
+    temparray.sort(function (a, b) {
+      if (a < b) {
+        return -1;
+      }
+      if (a > b) { return 1; }
+      return 0;
+    });
+
+    for (i = 0; i < temparray.length; i++) {
+      console.log(temparray[i]);
+    }
+    console.log("orignal array*************")
+    for (i = 0; i < countries.length; i++) {
+      console.log(countries[i]);
+    }
+
+    console.log("reverse alphabetical order array *************")
+    for (i = temparray.length - 1; i >= 0; i--) {
+      console.log(temparray[i]);
+    }
+
+    console.log("orignal array*************")
+    for (i = 0; i < countries.length; i++) {
+      console.log(countries[i]);
+    }
+
+    console.log("Reverse order orignal array *************")
+    for (i = countries.length - 1; i >= 0; i--) {
+      console.log(countries[i]);
+    }
+
+    console.log(" it’s back to its original order")
+    for (i = 0; i < countries.length; i++) {
+      console.log(countries[i]);
+    }
+  </script>
+
+</body>
+
+</html>

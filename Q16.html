@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let invite = [
+            "taha",
+            "mansoor",
+            "yasir"
+        ];
+
+        for (i = 0; i < invite.length; i++) {
+            console.log("HI " + invite[i] + " i am inviting your for dinner your presence would be highly appriciated");
+        }
+
+        console.log("hi " + invite[1] + " is not coming for some how reason");
+        invite[1] = "Sajid";
+
+        for (i = 0; i < invite.length; i++) {
+            console.log("HI " + invite[i] + " i am inviting your for dinner your presence would be highly appriciated");
+        }
+        console.log("I have found the bigger table for the dinner !");
+
+        invite.unshift("taikhum");
+        invite.splice(2, 0, "Zulnurain");
+        invite.push("yousuf");
+
+        console.log(invite.length);
+        for (i = 0; i < invite.length; i++) {
+            console.log("HI " + invite[i] + " i am inviting your for dinner your presence would be highly appriciated");
+        }
+    </script>
+
+</body>
+
+</html>
